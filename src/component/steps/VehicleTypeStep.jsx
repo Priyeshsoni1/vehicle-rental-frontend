@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { fetchVehicleTypes } from "../../api/api";
+import { fetchVehicleTypes } from "../../api/Api";
 import {
   FormControl,
   FormLabel,

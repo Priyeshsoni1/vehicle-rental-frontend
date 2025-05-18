@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { fetchModels } from "../../api/api";
+import { fetchModels } from "../../api/Api";
 import {
   FormControl,
   FormLabel,
