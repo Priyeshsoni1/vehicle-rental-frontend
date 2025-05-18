@@ -1,36 +1,20 @@
-import { CssBaseline, Container, Box } from "@mui/material";
-import StepperForm from "./component/Form";
-import backgroundImage from "./assets/car-rental.png"; // adjust path if different
+import React from "react";
+import { CssBaseline } from "@mui/material";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./component/Navbar";
+import Home from "./component/Pages/Home";
+import BookingList from "./component/Pages/BookingList";
 
 function App() {
   return (
-    <>
+    <Router>
       <CssBaseline />
-      <Box
-        sx={{
-          minHeight: "100vh",
-          backgroundImage: `url(${backgroundImage})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        <Container
-          maxWidth="sm"
-          sx={{
-            bgcolor: "rgba(255, 255, 255, 0.4)", // translucent white background
-            borderRadius: 2,
-            boxShadow: 3,
-            p: 4,
-            backdropFilter: "blur(10px)", // optional: glassmorphism effect
-          }}
-        >
-          <StepperForm />
-        </Container>
-      </Box>
-    </>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/details" element={<BookingList />} />
+      </Routes>
+    </Router>
   );
 }
 

@@ -51,7 +51,7 @@ export default function StepperForm() {
   };
 
   return (
-    <Box p={4}>
+    <Box p={4} sx={{ minHeight: "20rem" }}>
       <Typography variant="h5" mb={3}>
         {steps[stepIndex].label}
       </Typography>

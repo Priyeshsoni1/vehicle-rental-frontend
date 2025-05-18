@@ -4,7 +4,10 @@ import dayjs from "dayjs";
 
 export default function DateRangeStep({ formData, setFormData }) {
   return (
-    <Box>
+    <Box
+      gap={"2rem"}
+      sx={{ display: "flex", flexDirection: "column", gap: "2rem" }}
+    >
       <DatePicker
         value={formData.startDate}
         label="Start Date"
