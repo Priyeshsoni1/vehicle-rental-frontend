@@ -9,3 +9,4 @@ export const fetchVehicleTypes = (wheels) =>
 export const fetchModels = (vehicleTypeId) =>
   api.get(`/vehicles/${vehicleTypeId}`);
 export const submitBooking = (data) => api.post("/bookings", data);
+export const fetchBooking = () => api.get("/bookings");

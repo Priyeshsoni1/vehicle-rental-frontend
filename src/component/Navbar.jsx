@@ -59,7 +59,7 @@ function Navbar() {
             onClick={() => navigate("/details")}
             sx={{ backgroundColor: "#54544AFF", color: "#ffffff" }}
           >
-            See All Details
+            Bookings
           </Button>
         </Box>
       </Toolbar>
