@@ -19,11 +19,11 @@ const steps = [
     component: VehicleTypeStep,
     validate: (d) => d.vehicleTypeId,
   },
-  { label: "Model", component: ModelStep, validate: (d) => d.modelId },
+  { label: "Model", component: ModelStep, validate: (d) => d.vehicleId },
   {
     label: "Date Range",
     component: DateRangeStep,
-    validate: (d) => d.dateRange?.[0] && d.dateRange?.[1],
+    validate: (d) => d.startDate && d.endDate,
   },
 ];
 

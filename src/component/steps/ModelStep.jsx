@@ -26,9 +26,9 @@ export default function ModelStep({ formData, setFormData, error }) {
     <FormControl component="fieldset" error={!!error}>
       <FormLabel>Choose a Model</FormLabel>
       <RadioGroup
-        value={formData.modelId || ""}
+        value={formData.vehicleId || ""}
         onChange={(e) =>
-          setFormData((prev) => ({ ...prev, modelId: e.target.value }))
+          setFormData((prev) => ({ ...prev, vehicleId: +e.target.value }))
         }
       >
         {models.map((model) => (
